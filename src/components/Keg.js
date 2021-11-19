@@ -19,9 +19,11 @@ function Keg() {
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  alcoholContent: PropTypes.string.isRequired,
-  pints: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  alcoholContent: PropTypes.number.isRequired,
+  pints: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   whenKegClicked: PropTypes.func
 }
+
+export default Keg;

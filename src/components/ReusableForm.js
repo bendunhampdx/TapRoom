@@ -37,7 +37,7 @@ function ReusableForm(props) {
           // value={props.formData.alcoholContent}
           // onChange={props.formChangeHandler}
         />
-        <label htmlFor="pints">Pints left:</label>
+        <label htmlFor="volume">Update Volume:</label>
           <input
             type="text"
             name="pints"

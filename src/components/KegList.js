@@ -1,5 +1,6 @@
 import React from "react";
 import Keg from "./Keg";
+import PropTypes from "prop-types";
 
 function KegList(props) {
   return (
@@ -13,7 +14,8 @@ function KegList(props) {
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
-          pints={keg.pints}
+          volume={keg.volume}
+          pints = {keg.volume *8}
           id={keg.id}
           key={keg.id}
           />
@@ -22,5 +24,11 @@ function KegList(props) {
     </React.Fragment>
   );
 }
+
+KegList.propTypes = {
+  kegList: PropTypes.array,
+  onSelectingKeg: PropTypes.func,
+  onSellingPint: PropTypes.func
+};
 
 export default KegList;

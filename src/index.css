@@ -1,3 +1,21 @@
+.header-image {
+  margin-top: 2rem ;
+  width: 50%;
+}
+.header {
+  background-color: #501702;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

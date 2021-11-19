@@ -40,7 +40,7 @@ function ReusableForm(props) {
         <label htmlFor="volume">Update Volume:</label>
           <input
             type="text"
-            name="pints"
+            name="volume"
         />
 
         <button type='submit'>{props.buttonText}</button>

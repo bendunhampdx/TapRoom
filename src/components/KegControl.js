@@ -1,8 +1,8 @@
 import React from "react";
-import KegList from "./KegList";
 import NewKegForm from "./NewKegForm";
-import EditKegForm from "./EditKegForm";
+import KegList from "./KegList";
 import KegDetail from "./KegDetail";
+import EditKegForm from "./EditKegForm";
 
 class KegControl extends React.Component {
 
@@ -58,7 +58,7 @@ class KegControl extends React.Component {
   handleDeletingKeg = (id) => {
     const newKegList = this.state.kegList.filter(keg => keg.id !== id);
     this.setState({
-      KegList: newKegList,
+      kegList: newKegList,
       selectedKeg: null,
       editing: false
     });

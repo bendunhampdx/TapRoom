@@ -10,36 +10,31 @@ function ReusableForm(props) {
           type='text'
           name='name'
           placeholder='Beer Name'
-          // value={props.formData.name}
-          // onChange={props.formChangeHandler}
+
         />
         <label htmlFor="brand">Brand:</label>
         <input
           type='text'
           name='brand'
           placeholder='Brand'
-          // value={props.formData.brand}
-          // onChange={props.formChangeHandler}
+    
         />
         <label htmlFor="price">Price:</label>
         <input
-          type='text'
+          type='double'
           name='price'
           placeholder='Price'
-          // value={props.formData.price}
-          // onChange={props.formChangeHandler}
+
         />
-        <label htmlFor="abv">Alchohol Content:</label>
+        <label htmlFor="alchoholContent">Alchohol Content:</label>
         <input
-          type='text'
+          type='double'
           name='alcoholContent'
           placeholder='Alcohol Content'
-          // value={props.formData.alcoholContent}
-          // onChange={props.formChangeHandler}
         />
-        <label htmlFor="volume">Update Volume:</label>
+        <label htmlFor="volume">Update Volume in gallons:</label>
           <input
-            type="text"
+            type="double"
             name="volume"
         />
 
